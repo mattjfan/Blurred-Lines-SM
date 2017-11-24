@@ -1,0 +1,23 @@
+.navbar-nav {
+  flex-direction: row;
+}
+
+.nav-link {
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
+}
+
+.blockQuote{
+  text-align:center;
+  font-size:150%;
+  margin: 0 20%;
+}
+.emphasisText{
+  font-weight:200%;
+  text-align:center;
+  font-size:250%;
+  margin: 0 25%;
+}
+.fa{
+  padding: 0 .25rem;
+}
