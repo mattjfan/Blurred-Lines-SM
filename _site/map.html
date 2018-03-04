@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <link rel="stylesheet" href='css/styles.css'>
+  <title>Blurred Lines SM</title>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<div style='padding-left:20%;padding-right:20%;max-height:100vh;position:relative;'>
+
+  <img src='img/us_map.png' style='width:100%;'>
+
+  <div style='position:absolute;top:16%;left:23%;'>
+    <!--Portland-->
+    <a href='/locations/portland'>
+    <img data-location='Portland, OR' class='marker' src='img/target.png'>
+    </a>
+  </div>
+
+  <div style='position:absolute;top:43%;left:71.5%;'>
+    <!--DC-->
+    <a href='/locations/dc'>
+    <img data-location='Washington, DC' class='marker' src='img/target.png'>
+    </a>
+  </div>
+
+  <div style='position:absolute;top:16%;left:50%;'>
+    <!--Portland-->
+    <a href='/locations/college-park'>
+    <img data-location='College Park, MD' class='marker' src='img/target.png'>
+    </a>
+  </div>
+
+</div>
+<center>
+<p id='textbox'>Select an area to continue.</p>
+</center>
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+  <script src='js/loading-animations.js'></script>
+  <script>
+  $(".marker").hover(function() {
+      $('#textbox').text("Support Organizations in "+$(this).data("location")+". Click for details.");
+    },function() {
+        $('#textbox').text("Select an area to continue.");
+      });
+  </script>
+
+</body>
+</html>
