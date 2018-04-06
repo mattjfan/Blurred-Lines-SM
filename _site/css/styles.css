@@ -111,3 +111,7 @@ display: -webkit-flex;
 .container h2{
   color:red;
 }
+
+.team_pic{
+  max-width: 100%;
+}
